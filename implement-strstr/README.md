@@ -1,3 +1,4 @@
+[Discussion Post (created on 30/5/2021 at 11:13)](https://leetcode.com/problems/implement-strstr/discuss/1307332/Easy-to-read-simple-JS-solution)  
 <h2>28. Implement strStr()</h2><h3>Easy</h3><hr><div><p>Implement <a href="http://www.cplusplus.com/reference/cstring/strstr/" target="_blank">strStr()</a>.</p>
 
 <p>Return the index of the first occurrence of needle in haystack, or <code>-1</code> if <code>needle</code> is not part of <code>haystack</code>.</p>
