@@ -3,7 +3,4 @@
  * @param {string} p
  * @return {boolean}
  */
-const isMatch = (s, p) => {
-    const regex = new RegExp(p);
-    return s.match(regex)?.includes(s) ? true : false;
-}
+const isMatch = (s, p) => s.match(new RegExp(p))?.includes(s) ? true : false;
