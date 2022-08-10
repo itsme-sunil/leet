@@ -1,22 +1,20 @@
-/**
- * @param {string} s
- * @return {number}
- */
-var firstUniqChar = function(s) {
-    let characterList = {};
+# @param {String} s
+# @return {Integer}
+def first_uniq_char(s)
+    hash = {}    
+    split = s.split('')
     
-    for (let i = 0; i < s.length; i++) {
-        const char = s[i]
-        if (characterList[char]) {
-            characterList[char]++;
-        } else {
-            characterList[char] = 1;
-        }
+    split.each { |char|
+        if hash[char]
+            hash[char] += 1
+        else
+            hash[char] = 1
+        end
     }
     
-    for (let j = 0; j < s.length; j++) {
-        if (characterList[s[j]] === 1) return j;
+    split.each_with_index { |char, idx|
+        return idx if hash[char] == 1 
     }
     
-    return -1;
-};
+    return -1
+end
