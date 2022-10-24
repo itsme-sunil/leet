@@ -3,8 +3,7 @@
  * @return {boolean}
  */
 var squareIsWhite = function(coordinates) {
-    const file = coordinates[0].charCodeAt();
-    const rank = Number(coordinates[1]);
-        
-    return (rank + file) % 2 === 1;
+    return (
+        coordinates[0].charCodeAt() + Number(coordinates[1])
+    ) % 2 === 1;
 };
