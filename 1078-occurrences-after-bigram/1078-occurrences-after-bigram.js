@@ -6,13 +6,13 @@
  */
 var findOcurrences = function(text, first, second) {
     let result = [];
-    const textArray = text.split(' ');
+    text = text.split(' ');
     
-    for (let i = 0; i < textArray.length; i++) {
-        if (textArray[i - 1] !== first || textArray[i] !== second) continue;
-        if (textArray[i + 1] === undefined) continue;
+    for (let i = 0; i < text.length; i++) {
+        if (text[i - 1] !== first || text[i] !== second) continue;
+        if (text[i + 1] === undefined) continue;
         
-        result.push(textArray[i + 1]);
+        result.push(text[i + 1]);
     }
     
     return result;
